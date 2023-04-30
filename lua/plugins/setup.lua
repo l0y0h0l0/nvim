@@ -28,7 +28,7 @@ return require('packer').startup(function(use)
 
   use 'kyazdani42/nvim-web-devicons'
   use {
-    'nvim-lualine/lualine.nvim', -- statusline
+    'nvim-lualine/lualine.nvim',                              -- statusline
     requires = { 'kyazdani42/nvim-web-devicons', opt = true } -- statusline icon
   }
 
@@ -37,10 +37,10 @@ return require('packer').startup(function(use)
     requires = {
       'nvim-tree/nvim-web-devicons', -- optional, for file icons
     },
-    tag = 'nightly' -- optional, updated every week. (see issue #1193)
+    tag = 'nightly'                  -- optional, updated every week. (see issue #1193)
   }
 
-  use 'nvim-treesitter/nvim-treesitter'
+   use 'nvim-treesitter/nvim-treesitter'
   use 'p00f/nvim-ts-rainbow'
 
   -- lsp
@@ -75,13 +75,13 @@ return require('packer').startup(function(use)
     requires = { { 'nvim-lua/plenary.nvim' } }
   }
 
-  use({ 
+  use({
     'akinsho/toggleterm.nvim',
     tag = '*',
   })
   use 'xiyaowong/nvim-transparent'
   use 'lukas-reineke/indent-blankline.nvim'
-  use ({
+  use({
     'folke/noice.nvim',
     requires = {
       'MunifTanjim/nui.nvim',
@@ -90,6 +90,14 @@ return require('packer').startup(function(use)
   })
 
   use 'folke/which-key.nvim'
+
+  -- DAP
+  use 'mfussenegger/nvim-dap'
+  use {
+    "rcarriga/nvim-dap-ui",
+    requires = { "mfussenegger/nvim-dap" }
+  }
+  use 'theHamsta/nvim-dap-virtual-text'
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
