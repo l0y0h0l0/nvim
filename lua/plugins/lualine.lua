@@ -1,5 +1,5 @@
 require ('lualine').setup({
   options = {
-    theme = 'one_monokai'
+    theme = 'one_monokai',
   }
 })
