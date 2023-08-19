@@ -135,6 +135,6 @@ dap.configurations.cpp = {
     end,
     cwd = "${workspaceFolder}",
     stopAtEntry = true,
-  },
+  }
 }
 dap.configurations.c = dap.configurations.cpp
