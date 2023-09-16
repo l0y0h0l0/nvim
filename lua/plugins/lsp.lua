@@ -56,21 +56,16 @@ local lspconfig = require("lspconfig")
 
 lspconfig.util.default_config.capabilities = capabilities;
 
-lspconfig.lua_ls.setup {
---  on_attach = on_attach,
-}
+lspconfig.lua_ls.setup {}
 
 lspconfig.clangd.setup {
---  on_attach = on_attach,
   capabilities = { offsetEncoding = { 'utf-16' } },
 }
 
-lspconfig.gopls.setup {
---  on_attach = on_attach,
-}
+lspconfig.gopls.setup {}
 
-lspconfig.rust_analyzer.setup {
---  on_attach = on_attach,
-}
+lspconfig.rust_analyzer.setup {}
 
 lspconfig.vimls.setup {}
+
+lspconfig.cmake.setup {}
