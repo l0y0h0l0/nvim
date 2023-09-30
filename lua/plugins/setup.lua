@@ -50,6 +50,8 @@ return require('packer').startup(function(use)
     'neovim/nvim-lspconfig'
   }
 
+  use 'nvimdev/lspsaga.nvim'
+
   -- formatter
   use {
     'jose-elias-alvarez/null-ls.nvim',
