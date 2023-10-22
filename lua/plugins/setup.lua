@@ -50,7 +50,7 @@ return require('packer').startup(function(use)
     'neovim/nvim-lspconfig'
   }
 
-  use 'nvimdev/lspsaga.nvim'
+  use 'kkharji/lspsaga.nvim'
 
   -- formatter
   use {

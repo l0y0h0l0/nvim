@@ -1,7 +1,6 @@
 local opt = vim.opt
 
 -- theme
--- vim.cmd[[colorscheme one_monokai]]
 theme = 'one_monokai'
 
 -- encoding
