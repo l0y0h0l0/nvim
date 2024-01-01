@@ -1,19 +1,20 @@
-require("mason").setup({
+require('mason').setup({
   ui = {
+    border = 'rounded',
     icons = {
-      package_installed = "✓",
-      package_pending = "➜",
-      package_uninstalled = "✗"
+      package_installed = '✓',
+      package_pending = '➜',
+      package_uninstalled = '✗'
     },
   }
 })
 
-require("mason-lspconfig").setup({
+require('mason-lspconfig').setup({
   ensure_installed = {
-    "lua_ls",
-    "clangd",
-    "gopls",
-    "rust_analyzer",
-    "vimls",
+    'lua_ls',
+    'clangd',
+    'gopls',
+    'rust_analyzer',
+    'vimls',
   },
 })

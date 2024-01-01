@@ -73,7 +73,7 @@ return require('packer').startup(function(use)
   use 'lewis6991/gitsigns.nvim'
 
   use {
-    'nvim-telescope/telescope.nvim', tag = '0.1.1',
+    'nvim-telescope/telescope.nvim', tag = '0.1.4',
     requires = { { 'nvim-lua/plenary.nvim' } }
   }
 
@@ -107,6 +107,8 @@ return require('packer').startup(function(use)
       require('Comment').setup()
     end
   }
+
+  use 'folke/flash.nvim'
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins

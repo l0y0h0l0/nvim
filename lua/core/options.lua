@@ -20,7 +20,7 @@ opt.autoindent = true
 
 -- listcahrs
 opt.list = true
-opt.listchars = 'space:·'
+opt.listchars = { space = '·', tab = '→ ' }
 
 -- wrap
 opt.wrap = false
@@ -50,4 +50,3 @@ opt.signcolumn = "yes"
 -- split window
 opt.splitright = true
 opt.splitbelow = true
-
