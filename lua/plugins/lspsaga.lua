@@ -1,11 +1,13 @@
 require("lspsaga").setup {
   -- -- 提示边框样式：round、single、double
   border_style = "round",
-  error_sign = "",
-  infor_sign = " ",
+  error_sign = "󰅚",
+  infor_sign = "󰯗",
+  hint_sign = "",
+  warn_sign = " ",
   -- code action title icon
   code_action_icon = " ",
-  warn_sign = " ",
+  diagnostic_header_icon = " ",
   -- code_action_prompt = {
   --   -- 显示写入行提示
   --   -- 如果为 true ，则写代码时会在左侧行号栏中显示你所定义的图标
@@ -37,9 +39,9 @@ vim.api.nvim_create_autocmd("LspAttach", {
     local opts = { buffer = ev.buf }
     vim.keymap.set("n", "gD", vim.lsp.buf.declaration, opts)
     vim.keymap.set("n", "gd", vim.lsp.buf.definition, opts)
-    -- vim.keymap.set("n", "K", vim.lsp.buf.hover, opts)
-    vim.keymap.set("n", "K", "<cmd>Lspsaga hover_doc<CR>", opts)
-    vim.keymap.set("n", "gK", "<cmd>Lspsaga preview_definition<CR>", opts)
+    vim.keymap.set("n", "K", vim.lsp.buf.hover, opts)
+    -- vim.keymap.set("n", "K", "<cmd>Lspsaga hover_doc<CR>", opts)
+    vim.keymap.set("n", "gK", vim.lsp.buf.signature_help, opts)
     vim.keymap.set("n", "gi", vim.lsp.buf.implementation, opts)
     vim.keymap.set("n", "gr", vim.lsp.buf.references, opts)
     vim.keymap.set("n", "<C-k>", vim.lsp.buf.signature_help, opts)
