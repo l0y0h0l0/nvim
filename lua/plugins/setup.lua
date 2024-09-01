@@ -17,7 +17,6 @@ vim.opt.rtp:prepend(lazypath)
 
 
 local plugins = {
-  'wbthomason/packer.nvim',
   -- My plugins here
   -- theme
   'cpea2506/one_monokai.nvim',
